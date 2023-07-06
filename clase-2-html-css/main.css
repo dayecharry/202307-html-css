@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+/* position:fixed, sticky, stactic, relative, absolute*/
+.header{
+    background-color: aqua;
+    height: 50px;
+    /*position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;*/
+    z-index: 100;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.cookies{
+    background-color: brown;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main{
+   /* margin-top: 50px;*/
+   position: relative;
+}
+
+.paragraph{
+    font-size: 20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: beige;
+}
+.paragraph-relative{
+    background-color: blue;
+    position: relative;
+    top:50px;
+    left:50px;
+}
+.menu{
+    display: none;
+}
+ /* min-width, max-width*/
+
+@media (min-width: 720px) {
+    .header{
+        background-color: yellow;
+    }
+    .paragraph-relative{
+        top: 0;
+        left: 0;
+    }
+}
+@media all  and (min-width:950px) {
+    .menu{
+        display:block;
+    }
+    .header{
+        background-color: aqua;
+    }
+}
+@media (min-width:1000px  ) and (max-width:1100px)
+{
+    .header{
+        background-color: black;
+    }
+}
+/* 
+    480, 720, 1024, 1500
+*/

@@ -1,0 +1,19 @@
+@media (max-width: 480px){
+    .menu{
+        display: none;
+    }
+    .premium-section{
+        flex-direction: column;
+    }
+    .premium-section article{
+        display: flex;
+        width:100% ;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (min-width: 481px){
+    .menuBur{
+        display: none;
+    }
+}

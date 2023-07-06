@@ -1,0 +1,66 @@
+/* medidas : pixel
+    %-->  hace referencia al padre o contenedor
+    rem -> 
+    vh- vw
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url("../images/logo.png");
+/*
+    */
+    background-repeat: no-repeat; /* en caso que la imagen sea pequeña y se repita*/
+    height: 50vh;
+    background-position: center;
+}
+
+.hero{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+.hero img{
+    width: 100%;
+    height:50vh;
+}
+
+.container{
+    background-color: grey;
+   /* display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 200px;
+    gap: 10px;
+}
+
+.box-ppal{
+    grid-column: 1/3;
+    /*grid-column: span ;*/
+    grid-row: span 2;
+}
+
+.box{
+    background-color: pink;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+
+/*max-width, max-height */
+
+@media (min-width:1024px) {
+    .hero img{
+        height:100vh;
+    }
+    .header{
+        background-image: url("../images/247072.jpg");
+        background-size: cover;
+        background-position: top left;
+        /*center, bootom, rigth */
+    }
+}

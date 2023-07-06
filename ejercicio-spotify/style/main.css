@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.img-logo{
+    width: 150px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.menuBur{
+    width: 50px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+/* al pasar el mouse encima de la a*/ 
+.menu a:hover{
+    color: green;
+}
+.premium-section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.title-premium{
+    text-align: center;
+    margin: 15px
+}
+.premium-section article{
+    width: 20%;
+}
+.img-section{
+    width: 150px;
+}
+
+/*pseudoclases hover, link, active */
+

@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+}
+/* display --> flex, block, grid, inline, inline-block*/
+
+/* *selectores CSS
+    1.- class
+    2.- id
+    3.- etiquetas
+*/
+.header{
+    background-color: blue;
+    color: white;
+    font-size:30px;
+}
+#title{
+    color:yellow;
+}
+.ppal{
+    width: 22%;
+    height: 100px;
+    background-color: pink;
+}
+.aside{
+    background-color: purple;
+}
+.main{
+    height: 1000px;
+    border: 1px solid black;
+    display:  flex;
+    flex-direction: row; 
+    /* column --> eje principal y
+        row--> eje principal X
+
+    
+    */
+    gap: 2px; /* separacion de los hijos */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*center, space-between*/
+     /*centrar los elementos en el eje ppal*/
+    align-items: center;
+    align-content: center;
+}
+/* permite organizar elementos de un contenedor padre()*/
