@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="section-form">
+        <legend>Datos personales</legend>
+        <label for="name"> Nombre</label>
+        <input type="text" name="" id="name" maxlength="4" minlength="2" />
+        <br />
+        <label>¿Tiene mascota?</label>
+        <input type="radio" name="pet" id="" value="s" /> si
+        <input type="radio" name="pet" id="" value="n" /> no<br />
+        <label>¿Vegetales que te desagradan?</label>
+        <input type="checkbox" name="" id="cb" value="cb" />
+        <label for="cb">calabacin</label>
+        <input type="checkbox" name="" id="" value="pm" />pimiento
+        <input type="checkbox" name="" id="" value="ce" />
+        cebolla
+        <input type="checkbox" name="" id="" value="rc" />
+        rucula
+        <br />
+        <label for="">edad</label>
+        <input type="number" name="" id="" max="100" min="18" />
+        <br />
+        <label for="">fecha nacimiento</label>
+        <input type="date" min="2023-07-06" />
+      </fieldset>
+
+      <fieldset class="section-form">
+        <legend>Datos profesionales</legend>
+        <label for="">email</label>
+
+        <input type="email" name="" id="" placeholder="" />
+        <label for="country"> Pais</label>
+        <select name="" id="country">
+          <option selected disabled>Seleccione</option>
+          <option value="es">España</option>
+          <option value="fr">Francia</option>
+        </select>
+        input:
+        <label for="">descripcion</label>
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+      </fieldset>
+
+      <input type="submit" value="registrate" />
+    </form>
+  </body>
+</html>
+<!-- option, input checkbox, input radio,  siempre deben llevar value -->
