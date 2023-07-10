@@ -1,0 +1,24 @@
+.header {
+    background-color: $color-primary;
+    height: 10vh;
+    &-title {
+        @include carFuente(Courier New, 30px, white, 40px)
+    }
+    .menu {
+        @include cajasFlexibles();
+        list-style: none;
+
+        &-li {
+            color: aqua;
+            text-decoration: none;
+
+            &-active {
+                color: red;
+            }
+
+        }
+    }
+    @media (min-width:980px){
+        background-color: pink;
+    }
+}
