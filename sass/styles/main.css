@@ -1,0 +1,61 @@
+/* import de los parciales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky; /*fixed */
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-nav {
+  border: 5px dashed pink;
+}
+.header-img {
+  width: 50px;
+}
+.header .menu {
+  display: flex;
+  list-style: none;
+}
+.header .menu-link {
+  text-decoration: none;
+  color: blue;
+  padding: 5px;
+}
+
+.main {
+  background-color: lightgray;
+}
+.main-section {
+  font-family: "Courier New", Courier, monospace;
+}
+.main-section-title {
+  font-size: 12px;
+}
+.main-section-paragraph {
+  font-size: 10px;
+}
+.main-section .bootcamps {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 780px) {
+  .main-section .bootcamps {
+    flex-direction: row;
+  }
+}
+.main-section .bootcamps-link {
+  margin: 5px;
+  padding: 10px;
+  background-color: pink;
+  border-radius: 5px;
+  color: "white";
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+.header{
+    position:sticky; /*fixed */
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    display:  flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &-nav{
+        border: 5px dashed pink;
+    }
+
+    &-img{
+        width: 50px;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+        &-link{
+            text-decoration: none;
+            color: blue;
+            padding: 5px;
+        }
+    
+    }
+   
+}
+

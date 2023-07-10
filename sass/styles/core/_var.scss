@@ -1,0 +1,9 @@
+$family: 'Courier New', Courier, monospace;
+$color-btn: "white";
+
+@mixin boton($color, $padding){
+    padding:$padding;
+    background-color:$color;
+    border-radius: 5px;
+    color: $color-btn;
+}

@@ -1,0 +1,25 @@
+.main{
+    background-color: lightgray;
+    
+    &-section{
+        font-family: $family;
+        &-title{
+            font-size: 12px;
+        }
+        &-paragraph{
+            font-size: 10px;
+        }
+
+        .bootcamps{
+            display: flex;
+            flex-direction: column;
+            @media (min-width:780px){
+                flex-direction: row;
+            }
+            &-link{
+                margin: 5px;
+                @include boton(pink,10px);
+            }
+        }
+    }
+}
